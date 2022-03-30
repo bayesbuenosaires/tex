@@ -31,6 +31,20 @@
 \setlength{\TPHorizModule}{1mm} %128mm  mitad: 64 
 \setlength{\TPVertModule}{1mm}	%96mm  mitad 48
 
+\newif\ifen
+\newif\ifes
+\newcommand{\en}[1]{\ifen#1\fi}
+\newcommand{\es}[1]{\ifes#1\fi}
+\entrue
+
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor={red!50!black},
+    citecolor={blue!35!black},
+    urlcolor={blue!35!black}
+}
+
 \newcommand\hfrac[2]{\genfrac{}{}{0pt}{}{#1}{#2}} %\frac{}{} sin la linea del medio
 
 \newcommand{\N}{\mathcal{N}}
@@ -64,13 +78,6 @@
 % 
 \captionsetup[figure]{labelformat=empty}
 
-\hypersetup{
-    colorlinks=true,       % false: boxed links; true: colored links
-    linkcolor=white,          % color of internal links (change box color with linkbordercolor)
-    citecolor=green,        % color of links to bibliography
-    filecolor=magenta,      % color of file links
-    urlcolor=cyan           % color of external links
-}
 % 
 % http://latexcolor.com/
 \definecolor{lightseagreen}{rgb}{0.13, 0.7, 0.6.5}
